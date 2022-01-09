@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "6d0a6413-01af-43a3-88c8-952016a7f755",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getsellers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/seller/getsellers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"seller",
+						"getsellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcustomers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/customer/getcustomers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer",
+						"getcustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getseller/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/seller/getseller/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"seller",
+						"getseller",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcustomer/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/customer/getcustomer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer",
+						"getcustomer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addcustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\": 4,\n    \"customer_name\": \"Midha\",\n    \"customer_gender\": \"Female\",\n    \"customer_dob\": \"23-4-1999\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/customer/addcustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer",
+						"addcustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addseller",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"seller_id\": 4,\n    \"seller_name\": \"Hash\",\n    \"seller_gender\": \"Male\",\n    \"seller_dob\": \"23-4-1999\",\n    \"company_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/seller/addseller",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"seller",
+						"addseller"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
